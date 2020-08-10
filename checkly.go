@@ -11,10 +11,6 @@ import (
 	"strings"
 )
 
-func init() {
-	fmt.Println("This repo is deprecated (github.com/bitfield/checkly). Please use github.com/checkly/checkly-go-sdk instead.")
-}
-
 func getEnv(key, fallback string) string {
 	if value, ok := os.LookupEnv(key); ok {
 		return value
